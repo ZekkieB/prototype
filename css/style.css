@@ -1,0 +1,151 @@
+/* line 1, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif; }
+
+/* line 8, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ccc;
+  color: #7F8080; }
+
+/* line 16, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+div#slider {
+  position: relative;
+  order: 1; }
+
+/* line 20, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+div#imgContainer {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  text-align: center;
+  left: 85px;
+  top: 85px; }
+  /* line 28, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+  div#imgContainer img {
+    width: 100%; }
+
+/* line 31, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+p#mood {
+  width: 348px;
+  text-align: center; }
+
+/* line 35, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+section#container {
+  width: 360px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  background: #E4E4E4; }
+  /* line 43, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+  section#container div#btnContainer {
+    display: flex;
+    flex-grow: 2; }
+    /* line 47, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+    section#container div#btnContainer div#bigBtn {
+      height: 4.5rem;
+      background: #333;
+      align-self: flex-end;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff; }
+  /* line 57, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+  section#container div#tileContainer {
+    width: 100%;
+    height: 75.1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll; }
+    /* line 65, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+    section#container div#tileContainer div.tile {
+      width: 49%;
+      height: 14rem;
+      background: #fff;
+      margin-top: 7px;
+      display: flex;
+      flex-direction: column; }
+      /* line 73, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+      section#container div#tileContainer div.tile div.svgContainer {
+        height: 120px; }
+      /* line 76, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+      section#container div#tileContainer div.tile div.interface {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        /* line 83, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+        section#container div#tileContainer div.tile div.interface a {
+          width: 7rem;
+          background: #7F8080;
+          padding: 0.3rem;
+          text-align: center;
+          color: #fff;
+          text-decoration: none; }
+      /* line 90, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+      section#container div#tileContainer div.tile svg {
+        transform: scale(0.7, 0.7); }
+    /* line 93, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+    section#container div#tileContainer div.tile:nth-of-type(even) {
+      margin-left: 2%; }
+  /* line 98, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+  section#container nav#bottom {
+    width: 360px;
+    height: 4.5rem;
+    background: #fff;
+    position: absolute; }
+
+/* line 104, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+div#sliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem; }
+
+/* line 112, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+svg {
+  margin-top: -10px; }
+
+/* line 115, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+nav#top {
+  width: 100%;
+  height: 4.5rem;
+  background: #fff;
+  display: flex;
+  align-items: center; }
+  /* line 122, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+  nav#top h1#page {
+    flex-grow: 2;
+    text-align: center; }
+  /* line 126, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+  nav#top div.menu {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    /* line 133, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+    nav#top div.menu div#stripes {
+      width: 60%; }
+      /* line 136, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+      nav#top div.menu div#stripes div.stripe {
+        width: 100%;
+        height: 4px;
+        background: #7F8080;
+        margin-bottom: 0.5rem; }
+      /* line 142, C:/Users/zakaria/Desktop/circslider/css/style.sass */
+      nav#top div.menu div#stripes div.stripe:last-child {
+        margin: 0; }
+
+/*# sourceMappingURL=style.css.map */

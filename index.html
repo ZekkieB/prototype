@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/circular-slider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="lib/circular-slider.min.js"></script>
+    
+</head>
+<body> 
+   <section id="container" class="home">
+    <nav id="top">
+        <div class="menu">
+            <div id="stripes">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+            
+        </div>
+        <h1 id="page">Home</h1>
+        <div class="menu">
+    
+        </div>
+    </nav>
+    <div id="tileContainer">
+        <div class="tile">
+            <div class="svgContainer">
+                <svg viewBox="0 0 257.37 257.37">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-8 {
+                fill: none;
+            }
+            
+            .cls-2 {
+                isolation: isolate;
+            }
+            
+            .cls-3 {
+                fill: #808181;
+            }
+            
+            .cls-4 {
+                opacity: 0.2;
+                mix-blend-mode: multiply;
+            }
+            
+            .cls-5 {
+                clip-path: url(#clip-path);
+            }
+            
+            .cls-6 {
+                fill: #fff;
+            }
+            
+            .cls-7 {
+                fill: #e4e4e4;
+            }
+            
+            .cls-8 {
+                stroke: #808181;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 4.95px;
+            }
+        </style>
+        <clipPath id="clip-path" transform="translate(-207.98 -249.34)">
+            <rect class="cls-1" x="423.88" y="298.8" width="34.65" height="34.64" />
+        </clipPath>
+    </defs>
+    <title>Untitled-1</title>
+    <g class="cls-2">
+        <g id="Layer_1" data-name="Layer 1">
+            <path class="cls-3" d="M336.66,249.34A128.68,128.68,0,1,0,465.35,378,128.68,128.68,0,0,0,336.66,249.34Zm0,247.47A118.78,118.78,0,1,1,455.45,378,118.79,118.79,0,0,1,336.66,496.81Z" transform="translate(-207.98 -249.34)" />
+            <g class="cls-4">
+                <g class="cls-5">
+                    <g class="cls-5">
+                        <image width="68" height="68" transform="translate(215.9 49.46) scale(0.51)" xlink:href="data:image/png;base64,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" />
+                    </g>
+                </g>
+            </g>
+            <path class="cls-6" d="M455.47,315.1a14.27,14.27,0,1,1-14.27-14.27,14.27,14.27,0,0,1,14.27,14.27" transform="translate(-207.98 -249.34)" />
+            <path class="cls-7" d="M336.66,450.57A72.56,72.56,0,1,1,409.22,378,72.55,72.55,0,0,1,336.66,450.57Z" transform="translate(-207.98 -249.34)" />
+            <circle class="cls-3" cx="91" cy="119.87" r="8.3" />
+            <path class="cls-3" d="M382.64,369.21a8.3,8.3,0,1,1-8.3-8.29A8.3,8.3,0,0,1,382.64,369.21Z" transform="translate(-207.98 -249.34)" />
+            <path class="cls-8" d="M315.42,400.71s19.64,22.26,41.9,0" transform="translate(-207.98 -249.34)" />
+        </g>
+    </g>
+</svg>
+            </div>
+            <div class="interface">
+                <p>Moodtest</p>
+                <a href="moodmeter.html">Doe de test</a>
+            </div>
+        </div>
+        <div class="tile">
+           <div class="svgContainer">
+               <svg id="Layer_1" viewBox="0 0 257.38 219.68">
+    <defs>
+        <style>
+            .c1 {
+                fill: #3d3d3c;
+            }
+            
+            .c2 {
+                fill: #353634;
+            }
+            
+            .c3 {
+                fill: #6b6b6a;
+            }
+            
+            .c4 {
+                fill: #939393;
+            }
+            
+            .c5 {
+                fill: #dededd;
+            }
+            
+            .c6 {
+                fill: #bababa;
+            }
+            
+            .c7 {
+                fill: #1d1d1b;
+            }
+            
+            .c8 {
+                fill: #808181;
+            }
+        </style>
+    </defs>
+    <title>Untitled-1</title>
+    <path class="c1" d="M435.46,365H396.77a89.8,89.8,0,0,0-26.35-63.65L397.76,274A128.3,128.3,0,0,1,435.46,365Z" transform="translate(-178.08 -236.35)" />
+    <path class="c2" d="M396.77,365h38.69a128.3,128.3,0,0,1-37.7,91l-27.38-27.38A89.5,89.5,0,0,0,396.77,365Z" transform="translate(-178.08 -236.35)" />
+    <path class="c3" d="M397.76,274l-27.34,27.34A89.87,89.87,0,0,0,306.77,275V236.35A128.23,128.23,0,0,1,397.76,274Z" transform="translate(-178.08 -236.35)" />
+    <path class="c4" d="M306.77,236.35V275a89.8,89.8,0,0,0-63.65,26.35L215.77,274A128.23,128.23,0,0,1,306.77,236.35Z" transform="translate(-178.08 -236.35)" />
+    <path class="c5" d="M243.16,428.65L215.77,456a128.3,128.3,0,0,1-37.7-91h38.69A89.5,89.5,0,0,0,243.16,428.65Z" transform="translate(-178.08 -236.35)" />
+    <path class="c6" d="M215.77,274l27.34,27.34A89.8,89.8,0,0,0,216.77,365H178.08A128.3,128.3,0,0,1,215.77,274Z" transform="translate(-178.08 -236.35)" />
+    <path class="c7" d="M307.06,369.68c0.78,0.45.79,1.87,0,3.17h0c-0.76,1.3-2,2-2.78,1.54l-91.54-53.3c-0.77-.45-0.78-1.87,0-3.17h0c0.76-1.3,2-2,2.77-1.55Z" transform="translate(-178.08 -236.35)" />
+    <path class="c8" d="M314.78,373.3a8.3,8.3,0,1,1-8.3-8.29A8.3,8.3,0,0,1,314.78,373.3Z" transform="translate(-178.08 -236.35)" />
+</svg>
+           </div>
+           <div class="interface">
+                <p>Moodtest</p>
+                <a href="#">Doe de test</a>  
+           </div>
+        </div>
+    </div>
+        <nav id="bottom">
+            
+        </nav>        
+   </section>
+</body>
+</html>
